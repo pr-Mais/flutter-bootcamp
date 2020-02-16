@@ -1,6 +1,6 @@
+<img align="left" width="50" src="https://cdn.worldvectorlogo.com/logos/flutter-logo.svg" alt="Flutter Logo">
+
 # Flutter Bootcamp
-Full Material of the Flutter Bootcamp.
-You can copy and download any of the material provided. <br/>
 
 ## Slides
 
