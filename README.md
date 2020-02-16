@@ -19,6 +19,10 @@ You can copy and download any of the material provided. <br/>
 - [Codelab 5: Async Functions]()
 - [Codelab 6: FutureBuilder & StreamBuilder]()
 
+## Final Project
+
+Refer to [social_app](https://github.com/pr-Mais/flutter-bootcamp/tree/master/social_app) folder for the complete code of the final project.
+
 ## Resources
 
 
