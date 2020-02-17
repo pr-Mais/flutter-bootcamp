@@ -6,7 +6,7 @@
 
 ## Codelabs
 
-- [Codelab 1: Dart Basics](https://dartpad.dev/embed-flutter.html?id=17a470aaf3df5c4c978f38124ebd2269)
+- [Codelab 1: Dart Basics](https://dartpad.dev/17a470aaf3df5c4c978f38124ebd2269)
 - Codelab 2: Flutter UI
   <br/>[*Without Solution*](https://dartpad.dev/embed-flutter.html?id=c2beeaf2786fd36ed81505a9525d6851)
   <br/>[*With Solution*](https://dartpad.dev/embed-flutter.html?id=7296ae8cd915135bff7f513c2e553314)
