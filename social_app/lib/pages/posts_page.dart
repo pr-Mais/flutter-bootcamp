@@ -1,9 +1,7 @@
 import 'package:social_app/app/app.dart';
-import 'package:social_app/components/loading_frame.dart';
 import 'package:social_app/components/post_card.dart';
 import 'package:social_app/models/post.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
 class PostsPage extends StatefulWidget {
   const PostsPage({Key key}) : super(key: key);
@@ -15,35 +13,36 @@ class PostsPage extends StatefulWidget {
 class _PostsPageState extends State<PostsPage> {
   @override
   Widget build(BuildContext context) {
-    return LoadingFrame<List<Post>>(
-      loader: (BuildContext context) => SocialApp.serviceOf(context).getPosts(),
-      builder: (BuildContext context, List<Post> posts) {
-        return AnimationLimiter(
-          child: ListView.builder(
+    return FutureBuilder<List<Post>>(
+      future: SocialApp.serviceOf(context).getPosts(),
+      builder: (BuildContext context, AsyncSnapshot snapshot) {
+        if (snapshot.hasError) {
+          return Center(
+            child: Text(snapshot.error.toString()),
+          );
+        } else if (snapshot.hasData) {
+          return ListView.builder(
             padding: EdgeInsets.only(top: 16.0),
-            itemCount: posts.length,
+            itemCount: snapshot.data.length,
             itemBuilder: (context, index) {
-              return AnimationConfiguration.staggeredList(
-                delay: Duration(milliseconds: 200),
-                position: index,
-                child: SlideAnimation(
-                  verticalOffset: 48.0,
-                  child: FadeInAnimation(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        PostCard(
-                          post: posts[index],
-                        ),
-                        Divider()
-                      ],
-                    ),
+              return Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  PostCard(
+                    post: snapshot.data[index],
                   ),
-                ),
+                  Divider()
+                ],
               );
             },
-          ),
-        );
+          );
+        } else if (snapshot.connectionState != ConnectionState.done) {
+          return Center(
+            child: CircularProgressIndicator(),
+          );
+        } else {
+          return SizedBox();
+        }
       },
     );
   }
