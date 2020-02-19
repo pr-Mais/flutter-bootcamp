@@ -2,8 +2,6 @@
 
 # Flutter Bootcamp
 
-## Slides
-
 ## Codelabs
 
 - [Codelab 1: Dart Basics](https://dartpad.dev/17a470aaf3df5c4c978f38124ebd2269)
@@ -22,6 +20,8 @@
 ## Final Project
 
 Refer to [social_app](https://github.com/pr-Mais/flutter-bootcamp/tree/master/social_app) folder for the complete code of the final project.
+
+## Slides
 
 ## Resources
 
