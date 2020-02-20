@@ -26,7 +26,7 @@ Refer to [social_app](https://github.com/pr-Mais/flutter-bootcamp/tree/master/so
 ## Resources
 
 ## Got more info?
-Head to our official [Flutter Bootcamp] site!
+Head to our official site!
 <br/>[Flutter Bootcamp](http://bit.ly/wtm-flutter-bootcamp)
 
 
