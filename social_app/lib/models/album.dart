@@ -2,7 +2,7 @@ import 'photo.dart';
 import 'user.dart';
 
 class Album {
-  const Album._({
+  const Album({
     this.photos,
     this.user,
     this.userId,
@@ -21,7 +21,7 @@ class Album {
     final photoList =
         photos.where((element) => element.albumId == albumId).toList();
     final user = users.firstWhere((element) => element.id == userId);
-    return Album._(
+    return Album(
       photos: photoList,
       user: user,
       userId: json['userId'],

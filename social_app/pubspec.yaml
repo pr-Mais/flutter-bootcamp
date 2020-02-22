@@ -15,7 +15,6 @@ dependencies:
   cupertino_icons: ^0.1.2
   provider:
   http:
-  flutter_staggered_animations: ^0.1.2
 
 dev_dependencies:
   flutter_test:

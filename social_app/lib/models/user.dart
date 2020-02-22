@@ -4,16 +4,18 @@ class User {
   String email;
   String website;
 
-  User(
+  User({
     this.id,
     this.name,
     this.email,
     this.website,
-  );
+  });
 
-  User.fromJson(Map json)
-      : id = json['id'],
-        name = json['name'],
-        email = json['email'],
-        website = json['website'];
+  factory User.fromJson(Map json) {
+    return User(
+        id: json['id'],
+        name: json['name'],
+        email: json['email'],
+        website: json['website']);
+  }
 }

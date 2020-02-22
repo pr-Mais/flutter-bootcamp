@@ -5,18 +5,20 @@ class Photo {
   String url;
   String thumbnailUrl;
 
-  Photo(
+  Photo({
     this.albumId,
     this.id,
     this.title,
     this.url,
     this.thumbnailUrl,
-  );
+  });
 
-  Photo.fromJson(Map json)
-      : albumId = json['albumId'],
-        id = json['id'],
-        title = json['title'],
-        url = json['url'],
-        thumbnailUrl = json['thumbnailUrl'];
+  factory Photo.fromJson(Map json) {
+    return Photo(
+        albumId: json['albumId'],
+        id: json['id'],
+        title: json['title'],
+        url: json['url'],
+        thumbnailUrl: json['thumbnailUrl']);
+  }
 }

@@ -10,7 +10,7 @@ class SocialApp extends StatelessWidget {
   }) : super(key: key);
 
   static GetService serviceOf(BuildContext context) {
-    return Provider.of<GetService>(context, listen: false);
+    return Provider.of<GetService>(context);
   }
 
   final GetService service;

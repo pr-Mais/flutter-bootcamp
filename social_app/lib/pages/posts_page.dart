@@ -13,18 +13,17 @@ class PostsPage extends StatefulWidget {
 class _PostsPageState extends State<PostsPage> {
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder<List<Post>>(
+    return FutureBuilder(
       future: SocialApp.serviceOf(context).getPosts(),
-      builder: (BuildContext context, AsyncSnapshot snapshot) {
-        if (snapshot.hasError) {
-          return Center(
-            child: Text(snapshot.error.toString()),
-          );
-        } else if (snapshot.hasData) {
+      builder: (context, snapshot){
+        if(snapshot.connectionState != ConnectionState.done){
+          return Center(child: CircularProgressIndicator(),);
+        } else if(snapshot.hasError){
+          return Text(snapshot.error);
+        } else if(snapshot.hasData){
           return ListView.builder(
-            padding: EdgeInsets.only(top: 16.0),
             itemCount: snapshot.data.length,
-            itemBuilder: (context, index) {
+            itemBuilder: (context, index){
               return Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
@@ -36,12 +35,6 @@ class _PostsPageState extends State<PostsPage> {
               );
             },
           );
-        } else if (snapshot.connectionState != ConnectionState.done) {
-          return Center(
-            child: CircularProgressIndicator(),
-          );
-        } else {
-          return SizedBox();
         }
       },
     );
