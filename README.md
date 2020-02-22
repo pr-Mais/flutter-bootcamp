@@ -15,7 +15,7 @@
   <br/>[*Without Solution*](https://dartpad.dev/embed-flutter.html?id=c2beeaf2786fd36ed81505a9525d6851)
   <br/>[*With Solution*](https://dartpad.dev/embed-flutter.html?id=7296ae8cd915135bff7f513c2e553314)
 - [Codelab 5: Async Functions](https://dartpad.dev/201a9d3358e9e4ff010f7552587ea452)
-- [Codelab 6: FutureBuilder & StreamBuilder]()
+- [Codelab 6: FutureBuilder & StreamBuilder](https://dartpad.dev/a1852b9d7e817425c652de19021aaca4)
 
 ## Final Project
 
