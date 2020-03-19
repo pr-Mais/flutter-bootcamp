@@ -24,11 +24,12 @@ Refer to [social_app](https://github.com/pr-Mais/flutter-bootcamp/tree/master/so
 ## Slides
 
 ## Resources
+Refer to this [Link](https://github.com/pr-Mais/flutter-resources) for a complete set of resources.
 
 ## Got more info?
 Head to our site!
 <br/>[Flutter Bootcamp](http://bit.ly/wtm-flutter-bootcamp)
 
-
+## About Us
 
 
