@@ -23,6 +23,11 @@ Refer to [social_app](https://github.com/pr-Mais/flutter-bootcamp/tree/master/so
 
 ## Slides
 
+- [Introduction to Flutter](https://docs.google.com/presentation/d/1clihYX_fC9jeV9T0lbWl1x-od4hB95g-7ZcBRaTwhDI/edit?usp=sharing)
+- [Stateful & Stateless Widgets](https://docs.google.com/presentation/d/1lbrekYkW7Irn0KCaqDzNfty1HgVdXS1K08P2p1xO7eE/edit?usp=sharing)
+- [State Management](https://docs.google.com/presentation/d/1EEaLy2pbUkkxJGhtpoUa4g0DcUlxvCRAXYsz_eTG8YM/edit?usp=sharing)
+- [Async Coding](https://docs.google.com/presentation/d/17lhKnyh9eTn7670wJURKbA0LDVu0ATDt6JFemlctgoU/edit?usp=sharing)
+
 ## Resources
 Refer to this [Link](https://github.com/pr-Mais/flutter-resources) for a complete set of resources.
 
